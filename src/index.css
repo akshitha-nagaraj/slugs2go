@@ -10,4 +10,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+
 }
+
+@font-face {
+  font-family: 'CaviarDreams';
+  src: local('CaviarDreams'), url(./fonts/CaviarDreams.ttf) format('truetype');}

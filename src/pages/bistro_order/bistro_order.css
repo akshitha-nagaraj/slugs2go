@@ -5,10 +5,11 @@
 .nav_bar_frame {
   height: 108px;
   background: #255193;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .main_frame {
-  padding-top: 40px;
+  padding-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,13 +33,14 @@
   float: left;
 }
 
-.line {
+.bistro_divider {
   display: flex;
   justify-content: center;
-  width: 90%;
   height: 1px;
-  background: #000;
-  margin: auto;
+  width: 93%;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bistro{
@@ -48,7 +50,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  font-family: "Jost";
+  font-family: "CaviarDreams";
   font-size: 37px;
   font-style: normal;
   font-weight: 700;
@@ -75,19 +77,20 @@
   color: #000;
   font-size: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   text-align: center;
   justify-content: center;
   flex-direction: row;
-  /* margin: 5px 0px 5px 0px; */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
 }
 
 .add_cart_button{
   font-family: "Jost";
-  width: 206px;
+  width: 210px;
   height: 33px;
-  background-color: #255193;
+  background-color: black;
   border: #255193;
   color: white;
   font-size: 20px;
@@ -109,11 +112,11 @@
   font-family: "Jost";
   color: #000;
   font-size: 25px;
-  font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   line-height: normal;
   text-align: center;
-  margin: 5px 0px 5px 0px;
+  margin: 3px 0px 3px 0px;
+
 }
 
 .food_item{
@@ -127,15 +130,49 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
+
+  font-family: "Jost";
+  font-weight: 400;
+  font-size: 20px;
+  
 }
 
 .food_category{
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 30px;
 }
 
 .product {
   align-content: space-between;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.banner{
+  /* margin-top: 1px; */
+  position: relative;
+  width: 100%;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+.bistro_banner{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bistro{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-85%, -59%);
+  color: #fff; /* Text color */
+  font-family: CaviarDreams;
+  font-size: 80px; /* Adjust the font size as needed */
+  font-weight: normal; /* Adjust font weight as needed */
+  text-align: center;
 }

@@ -23,11 +23,13 @@ export const BistroOrder = () => {
                 </Link>
                 {/* <a className = "cartIcon" href="/bistro_cart">cart</a> */}
             </div>
-            <div className="bistro">BISTRO</div>
-            <div className="line"></div>
+            <div className="banner">
+                <div className="bistro">THE BISTRO</div>
+                <img className="bistro_banner" src={require("../../assets/bistro_banner.jpeg")}/>
+            </div>
             <div className="main_frame">
                 <div className="food_category">
-                    <div className="food_title">SALAD</div>
+                    <div className="food_title">SALADS</div>
                         <div className="food_item"> 
                             {PRODUCTS.slice(0, 3).map((product) => (
                                 <Product key={product.id} data={product} />
@@ -38,6 +40,14 @@ export const BistroOrder = () => {
                     <div className="food_title">APPETIZERS</div>
                         <div className="food_item"> 
                             {PRODUCTS.slice(3, 7).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">ENTREES</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(12, 14).map((product) => (
                                 <Product key={product.id} data={product} />
                             ))}
                         </div>
@@ -59,9 +69,9 @@ export const BistroOrder = () => {
                         </div>
                 </div>
                 <div className="food_category">
-                    <div className="food_title">ENTREES</div>
+                    <div className="food_title">DRINKS</div>
                         <div className="food_item"> 
-                            {PRODUCTS.slice(12, 14).map((product) => (
+                            {PRODUCTS.slice(16, ).map((product) => (
                                 <Product key={product.id} data={product} />
                             ))}
                         </div>
@@ -70,14 +80,6 @@ export const BistroOrder = () => {
                     <div className="food_title">DESSERTS</div>
                         <div className="food_item"> 
                             {PRODUCTS.slice(14, 16).map((product) => (
-                                <Product key={product.id} data={product} />
-                            ))}
-                        </div>
-                </div>
-                <div className="food_category">
-                    <div className="food_title">DRINKS</div>
-                        <div className="food_item"> 
-                            {PRODUCTS.slice(16, ).map((product) => (
                                 <Product key={product.id} data={product} />
                             ))}
                         </div>

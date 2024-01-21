@@ -18,7 +18,7 @@
 
 .inner_frame {
   display: flex;
-  padding-bottom: 50px;
+  padding-top: 30px;
   flex-direction: row;
   align-items: center;
   gap: 50px;
@@ -44,6 +44,7 @@
   gap: 10px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 20px;
 }
 
 .restaurant_picture {
@@ -60,7 +61,7 @@
     width: 207px;
     height: 28px;
     text-align: center;
-    font-family: "Jost";
+    font-family: "Chalkduster";
     /* justify-content: center; */
 }
 
