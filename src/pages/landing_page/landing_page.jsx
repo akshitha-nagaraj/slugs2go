@@ -13,30 +13,30 @@ export const LandingPage = () => {
             <div className="main_frame">
                 <div className="inner_frame">
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src={require("../../assets/bistro.heic")} />
+                        <img className = "restaurant_picture" src={require("../../assets/bistro.jpeg")} />
                         <a className = "restaurant_link" href="/bistro_order"><div className="restaurant_name">BISTRO</div></a>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/gvc.jpeg")}/>
                         <div className="restaurant_name">GLOBAL VILLAGE</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/banana_joes.jpeg")}/>
                         <div className="restaurant_name">BANANA JOES</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/merrill_market.jpeg")}/>
                         <div className="restaurant_name">MERRILL MARKET</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/ucen.jpeg")}/>
                         <div className="restaurant_name">UCEN CAFE</div>
                     </div>
                 </div>
                 
                 <div className="inner_frame">
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/oakes.jpeg")}/>
                         <div className="restaurant_name">OAKES CAFE</div>
                     </div>
                     <div className="restaurant_frame">

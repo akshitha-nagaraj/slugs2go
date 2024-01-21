@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import './bistro_order.css';
+import { ShopContext } from "../../context/bistro_context.jsx";
 // import { ShoppingCart } from phosphor-react;
 import { PRODUCTS } from "../../products.js";
-import {Product} from "./product.jsx";
+import { Product } from "./product.jsx";
 
 export const BistroOrder = () => {
+    const { cartItems } = useContext(ShopContext);
     return(
         <div className="page">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost"></link>
