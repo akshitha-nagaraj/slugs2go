@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import './bistro_order.css';
 import { ShopContext } from "../../context/bistro_context.jsx";
 // import { ShoppingCart } from phosphor-react;
@@ -11,8 +12,14 @@ export const BistroOrder = () => {
         <div className="page">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost"></link>
             <div className="nav_bar_frame">
-                <div className = "title">SlugsTOGO</div>
-                <a className = "cartIcon" href="/bistro_cart">cart</a>
+                <Link to="/">
+                    <img className="logo" src={require("../../assets/logo.jpeg")}/>
+                </Link>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                    <div className = "title">SlugsTOGO</div>
+                </Link>
+                {/* <a className = "cartIcon" href="/bistro_cart">cart</a> */}
+                <Link to="/bistro_cart">Go to Cart</Link>
             </div>
             <div className="bistro">BISTRO</div>
             <div className="line"></div>
@@ -21,7 +28,7 @@ export const BistroOrder = () => {
                 <div className="food_category">
                     <div className="food_item"> 
                         {PRODUCTS.map((product) => (
-                            <Product data={product} />
+                            <Product key={product.id} data={product} />
                         ))}
                     </div>
                 </div>

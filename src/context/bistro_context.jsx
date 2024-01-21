@@ -19,9 +19,11 @@ export const ShopContextProvider = (props) => {
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
+        console.log(`Item ID: ${item}, Quantity: ${cartItems[item]}, Price: ${itemInfo.price}`);
         totalAmount += cartItems[item] * itemInfo.price;
       }
     }
+    console.log(`Total Amount: ${totalAmount}`);
     return totalAmount;
   };
 

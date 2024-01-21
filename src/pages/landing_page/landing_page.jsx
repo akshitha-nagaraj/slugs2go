@@ -7,7 +7,15 @@ export const LandingPage = () => {
         <div className="page">
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost"></link>
             <div className="nav_bar_frame">
-                <div className = "title">SlugsTOGO</div>
+                <Link to="/">
+                    <img className="logo" src={require("../../assets/logo.jpeg")}/>
+                </Link>
+                <Link to="/" style={{ textDecoration: 'none' }}>
+                    <div className = "title">SlugsTOGO</div>
+                </Link>
+                <Link to="/">
+                    <img className="cart" src={require("../../assets/shopping_cart.jpeg")}/>
+                </Link>
             </div>
 
             <div className="main_frame">
@@ -40,19 +48,19 @@ export const LandingPage = () => {
                         <div className="restaurant_name">OAKES CAFE</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/stevenson.jpeg")}/>
                         <div className="restaurant_name">STEVENSON CAFE</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/perk_be.jpeg")}/>
                         <div className="restaurant_name">PERK - BE</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/perk_em.jpeg")}/>
                         <div className="restaurant_name">PERK - E&M</div>
                     </div>
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/perk_ps.jpeg")}/>
                         <div className="restaurant_name">PERK - PS</div>
                     </div>
                 </div>

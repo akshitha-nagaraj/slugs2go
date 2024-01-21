@@ -72,3 +72,16 @@
 .restaurant_link:hover {
   color: gray;
 }
+
+.logo {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.cart {
+  width: 10px;
+  height: 10px;
+  float: right;
+  padding-left: 
+}

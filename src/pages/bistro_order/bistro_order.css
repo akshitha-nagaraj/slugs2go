@@ -27,6 +27,12 @@ font-weight: 400;
 line-height: 100px;
 }
 
+.logo {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
 .line {
 width: 1129.002px;
 height: 1px;
