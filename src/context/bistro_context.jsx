@@ -20,7 +20,7 @@ export const ShopContextProvider = (props) => {
       if (cartItems[item] > 0) {
         let itemInfo = PRODUCTS.find((product) => product.id === Number(item));
         console.log(`Item ID: ${item}, Quantity: ${cartItems[item]}, Price: ${itemInfo.price}`);
-        totalAmount += cartItems[item] * itemInfo.price;
+        totalAmount += parseFloat((cartItems[item] * itemInfo.price).toFixed(2));
       }
     }
     console.log(`Total Amount: ${totalAmount}`);

@@ -80,7 +80,9 @@
 }
 
 .cart {
-  width: 10px;
-  height: 10px;
+  width: 80px;
+  height: 80x;
   float: right;
+  padding-top: 15px;
+  padding-right: 15px;
 }

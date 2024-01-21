@@ -3,28 +3,27 @@
 }
 
 .nav_bar_frame {
-height: 108px;
-background: #255193;
+  height: 108px;
+  background: #255193;
 }
 
 .main_frame {
+  padding-top: 40px;
   display: flex;
-  padding-bottom: 50px;
-  /* padding-top: 86px; */
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .title {
-color: #FFF;
-text-align: center;
-justify-content: center;
-font-family: "Jost";
-font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 100px;
+  color: #FFF;
+  text-align: center;
+  justify-content: center;
+  font-family: "Jost";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100px;
 }
 
 .logo {
@@ -43,54 +42,35 @@ line-height: 100px;
 }
 
 .bistro{
-display: flex;
-width: 1280px;
-height: 40px;
-flex-direction: column;
-justify-content: center;
-text-align: left;
-font-family: "Jost";
-font-size: 37px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-padding-left: 85px;
-padding-top: 46px;
-}
-
-.food_category {
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-gap: 50px;
-margin: auto;
-}
-
-.food_frame {
   display: flex;
-  width: 208px;
-  padding: 0px 0px 8px 1px;
+  width: 1280px;
+  height: 40px;
   flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+  justify-content: center;
+  text-align: left;
+  font-family: "Jost";
+  font-size: 37px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 85px;
+  padding-top: 46px;
+  padding-bottom: 20px;
+  }
 
 .food_picture {
-width: 206px;
-height: 206px;
-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+  width: 206px;
+  height: 206px;
+  /* margin-left: 50px;*/
 }
 
 .food_picture:hover{
-box-shadow: 0px 0px 0px 0px;
+  box-shadow: 0px 0px 0px 0px;
 }
 
 .food_title {
   /* width: 174px; */
-  height: 34px;
+  /* height: 34px; */
   font-family: "Jost";
   color: #000;
   font-size: 25px;
@@ -98,54 +78,64 @@ box-shadow: 0px 0px 0px 0px;
   font-weight: 400;
   line-height: normal;
   text-align: center;
-  margin: 5px 0px 5px 0px;
-}
-
-.buttons{
-display: flex;
-flex-direction: column;
+  justify-content: center;
+  flex-direction: row;
+  /* margin: 5px 0px 5px 0px; */
 }
 
 .add_cart_button{
-font-family: "Jost";
-width: 206px;
-height: 33px;
-background-color: #255193;
-border: #255193;
-color: white;
-font-size: 20px;
-/* padding: 10px; */
-/* border-radius: 5px; */
-margin: 2px 0px;
-cursor: pointer;
+  font-family: "Jost";
+  width: 206px;
+  height: 33px;
+  background-color: #255193;
+  border: #255193;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  /* margin-left: 50px; */
 }
 
 .add_cart_button:hover{
-background-color: #18335d;
-border-color: #18335d;
+  background-color: #18335d;
+  border-color: #18335d;
 }
 
-.customize_button{
-font-family: "Jost";
-width: 206px;
-height: 33px;
-background-color: white;
-border: 1.5px solid #255193;
-color: black;
-font-size: 20px;
-/* padding: 10px 60px; */
-/* border-radius: 5px; */
-margin: 2px 0px;
-cursor: pointer;
+.foodBox{
+  width: 600px;
 }
 
-.customize_button:hover{
-background-color: #255193;
-color: white;
+.text{
+  height: 34px;
+  font-family: "Jost";
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  margin: 5px 0px 5px 0px;
 }
 
-.food_category {
+.food_item{
+  /* border-radius: 15px; */
   display: flex;
+  width: 300px;
+  height: 350px;
   flex-direction: row;
-  background-color: blue;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.food_category{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.product {
+  align-content: space-between;
+  margin-bottom: 15px;
 }

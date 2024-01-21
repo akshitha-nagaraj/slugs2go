@@ -15,22 +15,72 @@ export const BistroOrder = () => {
                 <Link to="/">
                     <img className="logo" src={require("../../assets/logo.jpeg")}/>
                 </Link>
+                <Link to="/bistro_cart">
+                    <img className="cart" src={require("../../assets/shopping_cart.jpeg")}/>
+                </Link>
                 <Link to="/" style={{ textDecoration: 'none' }}>
-                    <div className = "title">SlugsTOGO</div>
+                    <div className="title">SlugsTOGO</div>
                 </Link>
                 {/* <a className = "cartIcon" href="/bistro_cart">cart</a> */}
-                <Link to="/bistro_cart">Go to Cart</Link>
             </div>
             <div className="bistro">BISTRO</div>
             <div className="line"></div>
             <div className="main_frame">
-                <div className="food_title">SALAD</div>
                 <div className="food_category">
-                    <div className="food_item"> 
-                        {PRODUCTS.map((product) => (
-                            <Product key={product.id} data={product} />
-                        ))}
-                    </div>
+                    <div className="food_title">SALAD</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(0, 3).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">APPETIZERS</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(3, 7).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">SANDWICHES</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(7, 10).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">PIZZAS</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(10, 12).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">ENTREES</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(12, 14).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">DESSERTS</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(14, 16).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
+                </div>
+                <div className="food_category">
+                    <div className="food_title">DRINKS</div>
+                        <div className="food_item"> 
+                            {PRODUCTS.slice(16, ).map((product) => (
+                                <Product key={product.id} data={product} />
+                            ))}
+                        </div>
                 </div>
             </div>
         </div>

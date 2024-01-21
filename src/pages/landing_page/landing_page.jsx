@@ -10,11 +10,11 @@ export const LandingPage = () => {
                 <Link to="/">
                     <img className="logo" src={require("../../assets/logo.jpeg")}/>
                 </Link>
+                <Link to="/bistro_cart">
+                    <img className="cart" src={require("../../assets/shopping_cart.jpeg")}/>
+                </Link>
                 <Link to="/" style={{ textDecoration: 'none' }}>
                     <div className = "title">SlugsTOGO</div>
-                </Link>
-                <Link to="/">
-                    <img className="cart" src={require("../../assets/shopping_cart.jpeg")}/>
                 </Link>
             </div>
 

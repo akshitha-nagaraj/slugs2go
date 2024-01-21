@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../../context/bistro_context";
+import styles from './bistro_cart.css';
+
 
 export const CartItem = (props) => {
   const { id, productName, price, productImage } = props.data;
