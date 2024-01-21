@@ -10,11 +10,10 @@ export const LandingPage = () => {
                 <div className = "title">SlugsTOGO</div>
             </div>
 
-        
             <div className="main_frame">
                 <div className="inner_frame">
                     <div className="restaurant_frame">
-                        <img className = "restaurant_picture" src="rectangle_placeholder.jpeg"/>
+                        <img className = "restaurant_picture" src={require("../../assets/bistro.heic")} />
                         <a className = "restaurant_link" href="/bistro_order"><div className="restaurant_name">BISTRO</div></a>
                     </div>
                     <div className="restaurant_frame">

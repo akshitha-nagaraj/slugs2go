@@ -15,7 +15,7 @@ function App() {
             {/* bistro order */}
             <Route path = "/bistro_order" element = {<BistroOrder />}/>
             {/* cart */}
-            <Route path = "/cart" element = {<Cart />}/>
+            <Route path = "/bistro_cart" element = {<Cart />}/>
           </Routes>
         </Router>
       </ShopContextProvider>
