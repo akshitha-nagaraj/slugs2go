@@ -1,0 +1,135 @@
+.page {
+  background: #ffffff;
+}
+
+.nav_bar_frame {
+height: 108px;
+background: #255193;
+}
+
+.main_frame {
+  display: flex;
+  padding-bottom: 50px;
+  /* padding-top: 86px; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+color: #FFF;
+text-align: center;
+justify-content: center;
+font-family: "Jost";
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: 100px;
+}
+
+.line {
+width: 1129.002px;
+height: 1px;
+background: #000;
+}
+
+.bistro{
+display: flex;
+width: 1280px;
+height: 40px;
+flex-direction: column;
+justify-content: center;
+font-family: "Jost";
+font-size: 37px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-left: 105px;
+padding-top: 46px;
+}
+
+.food_category {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 50px;
+}
+
+.food_frame {
+  display: flex;
+  width: 208px;
+  padding: 0px 0px 8px 1px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.food_picture {
+width: 206px;
+height: 206px;
+box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.food_picture:hover{
+box-shadow: 0px 0px 0px 0px;
+}
+
+.food_title {
+  /* width: 174px; */
+  height: 34px;
+  font-family: "Jost";
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 5px 0px 5px 0px;
+}
+
+.buttons{
+display: flex;
+flex-direction: column;
+}
+
+.add_cart_button{
+font-family: "Jost";
+width: 206px;
+height: 33px;
+background-color: #255193;
+border: #255193;
+color: white;
+font-size: 20px;
+/* padding: 10px; */
+/* border-radius: 5px; */
+margin: 2px 0px;
+cursor: pointer;
+}
+
+.add_cart_button:hover{
+background-color: #18335d;
+border-color: #18335d;
+}
+
+.customize_button{
+font-family: "Jost";
+width: 206px;
+height: 33px;
+background-color: white;
+border: 1.5px solid #255193;
+color: black;
+font-size: 20px;
+/* padding: 10px 60px; */
+/* border-radius: 5px; */
+margin: 2px 0px;
+cursor: pointer;
+}
+
+.customize_button:hover{
+background-color: #255193;
+color: white;
+}
+
