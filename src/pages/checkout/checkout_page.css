@@ -78,10 +78,11 @@ select:focus {
     color: #000;
     /* margin-left: 20%; */
     font-family: Jost;
-    font-size: 25px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 15px
   }
 
   .orderTotal_price{
@@ -97,7 +98,8 @@ select:focus {
   }
 
   input {
-    width: 40%;
+    width: 50%;
+    height: 2%;
     padding: 8px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -184,4 +186,8 @@ select:focus {
     height: 1px;
     background: #000;
     margin: auto;
+  }
+
+  .name {
+    font-size: 25px;
   }

@@ -119,6 +119,7 @@
     height: 600px;
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
     border-radius: 25px;
@@ -126,6 +127,7 @@
 
   .orderTotal_price{
     text-align: center;
+    padding-top: 18px;
   }
 
   .line {
@@ -135,4 +137,8 @@
     height: 1px;
     background: #000;
     margin: auto;
+  }
+
+  .continue {
+    
   }

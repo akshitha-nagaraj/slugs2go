@@ -44,18 +44,27 @@ export const Cart = () => {
                   <h1> Your Shopping Cart is Empty</h1>
                 ) : (
                   <div className = "priceBox">
-                    <div className = "orderTotal_price">Total:</div>
                     <div className="checkout">
                     <div className = "orderTotal_price">SubTotal: ${totalAmount}</div>
                     <div className = "orderTotal_price">Tax:      ${tax}</div>
                     <div className="line"></div>
                     <div className = "orderTotal_price">Total:    ${total}</div>
-                    <button onClick={() => navigate("/bistro_order")}> Continue Shopping </button>
+                    <button className="continue" onClick={() => navigate("/bistro_order")}> Continue Shopping </button>
                     <button onClick={() => navigate("/checkout_page")}> Checkout </button>
                     </div>
                   </div>
                 )}
-              </div>
+                  <div>
+                    <label>Select an option:</label>
+                      <select>
+                        Options
+                        <option value="option1">15 Mins</option>
+                        <option value="option2">30 Mins</option>
+                        <option value="option3">45 Mins</option>
+                        <option value="option3">60 Mins</option>
+                    </select>  
+                  </div>
+              </div>  
             </div>
     </div>  
     );
